@@ -50,8 +50,8 @@ namespace
 			Primitive primitive2 = sphere();
 
             // Move the sphere. x_position(now) = asks the animation what x at this point in time
-			primitive1 = translate(Vector3D(x_position1(now), 2, 0), primitive1);
-			primitive2 = translate(Vector3D(x_position2(now), -2, 0), primitive2);
+			primitive1 = translate(Vector3D(x_position1(now), 1, 0), primitive1);
+			primitive2 = translate(Vector3D(x_position2(now), -1, 0), primitive2);
 
             // Assign a material to the sphere
 			primitive1 = decorate(material, primitive1);
@@ -85,7 +85,7 @@ namespace
         raytracer::Camera create_camera(TimeStamp) override
         {
             return raytracer::cameras::perspective(
-                Point3D(0, 0, 10),         // position of eye
+                Point3D(0, 0, 5),         // position of eye
                 Point3D(0, 0, 0),          // point the camera looks at
                 Vector3D(0, 1, 0),         // up-vector: indicates camera is "standing up"
                 1,                         // distance between eye and viewing plane

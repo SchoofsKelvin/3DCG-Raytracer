@@ -844,3 +844,191 @@
 2017-10-04 11:24:25,735 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [142 ms]
 2017-10-04 11:24:25,742 INFO  [default] Writing WIF frame #29
 2017-10-04 11:24:25,766 INFO  [performance] Executed [int __cdecl main(int,char **)] in [5.491 seconds]
+2017-10-04 11:25:52,113 INFO  [default] Terminated successfully
+2017-10-04 11:25:52,123 INFO  [default] Received animation of duration 1s
+2017-10-04 11:25:52,125 INFO  [default] 30 frames per second, 0.0333333s per frame, 30 frames
+2017-10-04 11:25:52,127 INFO  [default] Producing frame 0 (@0s)
+2017-10-04 11:25:52,254 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [126 ms]
+2017-10-04 11:25:52,257 INFO  [default] Writing WIF frame #0
+2017-10-04 11:25:52,279 INFO  [default] Producing frame 1 (@0.0333333s)
+2017-10-04 11:25:52,408 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [128 ms]
+2017-10-04 11:25:52,411 INFO  [default] Writing WIF frame #1
+2017-10-04 11:25:52,430 INFO  [default] Producing frame 2 (@0.0666667s)
+2017-10-04 11:25:52,554 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [122 ms]
+2017-10-04 11:25:52,556 INFO  [default] Writing WIF frame #2
+2017-10-04 11:25:52,575 INFO  [default] Producing frame 3 (@0.1s)
+2017-10-04 11:25:52,689 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [112 ms]
+2017-10-04 11:25:52,693 INFO  [default] Writing WIF frame #3
+2017-10-04 11:25:52,717 INFO  [default] Producing frame 4 (@0.133333s)
+2017-10-04 11:25:52,834 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [115 ms]
+2017-10-04 11:25:52,839 INFO  [default] Writing WIF frame #4
+2017-10-04 11:25:52,860 INFO  [default] Producing frame 5 (@0.166667s)
+2017-10-04 11:25:53,011 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [148 ms]
+2017-10-04 11:25:53,017 INFO  [default] Writing WIF frame #5
+2017-10-04 11:25:53,043 INFO  [default] Producing frame 6 (@0.2s)
+2017-10-04 11:25:53,202 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [158 ms]
+2017-10-04 11:25:53,208 INFO  [default] Writing WIF frame #6
+2017-10-04 11:25:53,247 INFO  [default] Producing frame 7 (@0.233333s)
+2017-10-04 11:25:53,394 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [145 ms]
+2017-10-04 11:25:53,400 INFO  [default] Writing WIF frame #7
+2017-10-04 11:25:53,425 INFO  [default] Producing frame 8 (@0.266667s)
+2017-10-04 11:25:53,559 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [132 ms]
+2017-10-04 11:25:53,564 INFO  [default] Writing WIF frame #8
+2017-10-04 11:25:53,591 INFO  [default] Producing frame 9 (@0.3s)
+2017-10-04 11:25:53,726 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [133 ms]
+2017-10-04 11:25:53,731 INFO  [default] Writing WIF frame #9
+2017-10-04 11:25:53,760 INFO  [default] Producing frame 10 (@0.333333s)
+2017-10-04 11:25:53,928 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [166 ms]
+2017-10-04 11:25:53,933 INFO  [default] Writing WIF frame #10
+2017-10-04 11:25:53,967 INFO  [default] Producing frame 11 (@0.366667s)
+2017-10-04 11:25:54,107 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [138 ms]
+2017-10-04 11:25:54,111 INFO  [default] Writing WIF frame #11
+2017-10-04 11:25:54,136 INFO  [default] Producing frame 12 (@0.4s)
+2017-10-04 11:25:54,273 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [135 ms]
+2017-10-04 11:25:54,278 INFO  [default] Writing WIF frame #12
+2017-10-04 11:25:54,304 INFO  [default] Producing frame 13 (@0.433333s)
+2017-10-04 11:25:54,444 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [138 ms]
+2017-10-04 11:25:54,449 INFO  [default] Writing WIF frame #13
+2017-10-04 11:25:54,475 INFO  [default] Producing frame 14 (@0.466667s)
+2017-10-04 11:25:54,611 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [134 ms]
+2017-10-04 11:25:54,616 INFO  [default] Writing WIF frame #14
+2017-10-04 11:25:54,641 INFO  [default] Producing frame 15 (@0.5s)
+2017-10-04 11:25:54,779 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [136 ms]
+2017-10-04 11:25:54,785 INFO  [default] Writing WIF frame #15
+2017-10-04 11:25:54,811 INFO  [default] Producing frame 16 (@0.533333s)
+2017-10-04 11:25:54,953 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [140 ms]
+2017-10-04 11:25:54,957 INFO  [default] Writing WIF frame #16
+2017-10-04 11:25:54,987 INFO  [default] Producing frame 17 (@0.566667s)
+2017-10-04 11:25:55,124 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [135 ms]
+2017-10-04 11:25:55,129 INFO  [default] Writing WIF frame #17
+2017-10-04 11:25:55,154 INFO  [default] Producing frame 18 (@0.6s)
+2017-10-04 11:25:55,290 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [134 ms]
+2017-10-04 11:25:55,295 INFO  [default] Writing WIF frame #18
+2017-10-04 11:25:55,320 INFO  [default] Producing frame 19 (@0.633333s)
+2017-10-04 11:25:55,455 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [134 ms]
+2017-10-04 11:25:55,461 INFO  [default] Writing WIF frame #19
+2017-10-04 11:25:55,487 INFO  [default] Producing frame 20 (@0.666667s)
+2017-10-04 11:25:55,623 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [133 ms]
+2017-10-04 11:25:55,628 INFO  [default] Writing WIF frame #20
+2017-10-04 11:25:55,653 INFO  [default] Producing frame 21 (@0.7s)
+2017-10-04 11:25:55,791 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [136 ms]
+2017-10-04 11:25:55,795 INFO  [default] Writing WIF frame #21
+2017-10-04 11:25:55,820 INFO  [default] Producing frame 22 (@0.733333s)
+2017-10-04 11:25:55,958 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [135 ms]
+2017-10-04 11:25:55,964 INFO  [default] Writing WIF frame #22
+2017-10-04 11:25:55,989 INFO  [default] Producing frame 23 (@0.766667s)
+2017-10-04 11:25:56,139 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [148 ms]
+2017-10-04 11:25:56,145 INFO  [default] Writing WIF frame #23
+2017-10-04 11:25:56,170 INFO  [default] Producing frame 24 (@0.8s)
+2017-10-04 11:25:56,309 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [136 ms]
+2017-10-04 11:25:56,314 INFO  [default] Writing WIF frame #24
+2017-10-04 11:25:56,340 INFO  [default] Producing frame 25 (@0.833333s)
+2017-10-04 11:25:56,474 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [132 ms]
+2017-10-04 11:25:56,480 INFO  [default] Writing WIF frame #25
+2017-10-04 11:25:56,504 INFO  [default] Producing frame 26 (@0.866667s)
+2017-10-04 11:25:56,643 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [137 ms]
+2017-10-04 11:25:56,649 INFO  [default] Writing WIF frame #26
+2017-10-04 11:25:56,674 INFO  [default] Producing frame 27 (@0.9s)
+2017-10-04 11:25:56,811 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [136 ms]
+2017-10-04 11:25:56,815 INFO  [default] Writing WIF frame #27
+2017-10-04 11:25:56,841 INFO  [default] Producing frame 28 (@0.933333s)
+2017-10-04 11:25:56,981 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [138 ms]
+2017-10-04 11:25:56,986 INFO  [default] Writing WIF frame #28
+2017-10-04 11:25:57,011 INFO  [default] Producing frame 29 (@0.966667s)
+2017-10-04 11:25:57,149 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [136 ms]
+2017-10-04 11:25:57,153 INFO  [default] Writing WIF frame #29
+2017-10-04 11:25:57,179 INFO  [performance] Executed [int __cdecl main(int,char **)] in [5.067 seconds]
+2017-10-04 11:26:43,322 INFO  [default] Terminated successfully
+2017-10-04 11:26:43,327 INFO  [default] Received animation of duration 1s
+2017-10-04 11:26:43,328 INFO  [default] 30 frames per second, 0.0333333s per frame, 30 frames
+2017-10-04 11:26:43,330 INFO  [default] Producing frame 0 (@0s)
+2017-10-04 11:26:43,501 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [168 ms]
+2017-10-04 11:26:43,504 INFO  [default] Writing WIF frame #0
+2017-10-04 11:26:43,534 INFO  [default] Producing frame 1 (@0.0333333s)
+2017-10-04 11:26:43,716 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [180 ms]
+2017-10-04 11:26:43,719 INFO  [default] Writing WIF frame #1
+2017-10-04 11:26:43,747 INFO  [default] Producing frame 2 (@0.0666667s)
+2017-10-04 11:26:43,898 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [149 ms]
+2017-10-04 11:26:43,902 INFO  [default] Writing WIF frame #2
+2017-10-04 11:26:43,932 INFO  [default] Producing frame 3 (@0.1s)
+2017-10-04 11:26:44,086 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [152 ms]
+2017-10-04 11:26:44,091 INFO  [default] Writing WIF frame #3
+2017-10-04 11:26:44,116 INFO  [default] Producing frame 4 (@0.133333s)
+2017-10-04 11:26:44,262 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [143 ms]
+2017-10-04 11:26:44,270 INFO  [default] Writing WIF frame #4
+2017-10-04 11:26:44,300 INFO  [default] Producing frame 5 (@0.166667s)
+2017-10-04 11:26:44,452 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [150 ms]
+2017-10-04 11:26:44,457 INFO  [default] Writing WIF frame #5
+2017-10-04 11:26:44,482 INFO  [default] Producing frame 6 (@0.2s)
+2017-10-04 11:26:44,620 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [136 ms]
+2017-10-04 11:26:44,626 INFO  [default] Writing WIF frame #6
+2017-10-04 11:26:44,650 INFO  [default] Producing frame 7 (@0.233333s)
+2017-10-04 11:26:44,788 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [135 ms]
+2017-10-04 11:26:44,795 INFO  [default] Writing WIF frame #7
+2017-10-04 11:26:44,819 INFO  [default] Producing frame 8 (@0.266667s)
+2017-10-04 11:26:44,962 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [141 ms]
+2017-10-04 11:26:44,969 INFO  [default] Writing WIF frame #8
+2017-10-04 11:26:44,993 INFO  [default] Producing frame 9 (@0.3s)
+2017-10-04 11:26:45,141 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [145 ms]
+2017-10-04 11:26:45,147 INFO  [default] Writing WIF frame #9
+2017-10-04 11:26:45,173 INFO  [default] Producing frame 10 (@0.333333s)
+2017-10-04 11:26:45,320 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [144 ms]
+2017-10-04 11:26:45,325 INFO  [default] Writing WIF frame #10
+2017-10-04 11:26:45,350 INFO  [default] Producing frame 11 (@0.366667s)
+2017-10-04 11:26:45,501 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [148 ms]
+2017-10-04 11:26:45,507 INFO  [default] Writing WIF frame #11
+2017-10-04 11:26:45,532 INFO  [default] Producing frame 12 (@0.4s)
+2017-10-04 11:26:45,680 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [146 ms]
+2017-10-04 11:26:45,686 INFO  [default] Writing WIF frame #12
+2017-10-04 11:26:45,711 INFO  [default] Producing frame 13 (@0.433333s)
+2017-10-04 11:26:45,859 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [146 ms]
+2017-10-04 11:26:45,865 INFO  [default] Writing WIF frame #13
+2017-10-04 11:26:45,889 INFO  [default] Producing frame 14 (@0.466667s)
+2017-10-04 11:26:46,040 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [149 ms]
+2017-10-04 11:26:46,045 INFO  [default] Writing WIF frame #14
+2017-10-04 11:26:46,069 INFO  [default] Producing frame 15 (@0.5s)
+2017-10-04 11:26:46,219 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [147 ms]
+2017-10-04 11:26:46,224 INFO  [default] Writing WIF frame #15
+2017-10-04 11:26:46,248 INFO  [default] Producing frame 16 (@0.533333s)
+2017-10-04 11:26:46,398 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [147 ms]
+2017-10-04 11:26:46,405 INFO  [default] Writing WIF frame #16
+2017-10-04 11:26:46,429 INFO  [default] Producing frame 17 (@0.566667s)
+2017-10-04 11:26:46,579 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [148 ms]
+2017-10-04 11:26:46,585 INFO  [default] Writing WIF frame #17
+2017-10-04 11:26:46,609 INFO  [default] Producing frame 18 (@0.6s)
+2017-10-04 11:26:46,757 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [145 ms]
+2017-10-04 11:26:46,762 INFO  [default] Writing WIF frame #18
+2017-10-04 11:26:46,788 INFO  [default] Producing frame 19 (@0.633333s)
+2017-10-04 11:26:46,938 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [147 ms]
+2017-10-04 11:26:46,943 INFO  [default] Writing WIF frame #19
+2017-10-04 11:26:46,967 INFO  [default] Producing frame 20 (@0.666667s)
+2017-10-04 11:26:47,118 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [148 ms]
+2017-10-04 11:26:47,122 INFO  [default] Writing WIF frame #20
+2017-10-04 11:26:47,146 INFO  [default] Producing frame 21 (@0.7s)
+2017-10-04 11:26:47,291 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [142 ms]
+2017-10-04 11:26:47,296 INFO  [default] Writing WIF frame #21
+2017-10-04 11:26:47,320 INFO  [default] Producing frame 22 (@0.733333s)
+2017-10-04 11:26:47,460 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [138 ms]
+2017-10-04 11:26:47,466 INFO  [default] Writing WIF frame #22
+2017-10-04 11:26:47,490 INFO  [default] Producing frame 23 (@0.766667s)
+2017-10-04 11:26:47,629 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [137 ms]
+2017-10-04 11:26:47,635 INFO  [default] Writing WIF frame #23
+2017-10-04 11:26:47,659 INFO  [default] Producing frame 24 (@0.8s)
+2017-10-04 11:26:47,795 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [132 ms]
+2017-10-04 11:26:47,800 INFO  [default] Writing WIF frame #24
+2017-10-04 11:26:47,837 INFO  [default] Producing frame 25 (@0.833333s)
+2017-10-04 11:26:47,970 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [131 ms]
+2017-10-04 11:26:47,975 INFO  [default] Writing WIF frame #25
+2017-10-04 11:26:48,003 INFO  [default] Producing frame 26 (@0.866667s)
+2017-10-04 11:26:48,140 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [135 ms]
+2017-10-04 11:26:48,147 INFO  [default] Writing WIF frame #26
+2017-10-04 11:26:48,172 INFO  [default] Producing frame 27 (@0.9s)
+2017-10-04 11:26:48,305 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [130 ms]
+2017-10-04 11:26:48,312 INFO  [default] Writing WIF frame #27
+2017-10-04 11:26:48,336 INFO  [default] Producing frame 28 (@0.933333s)
+2017-10-04 11:26:48,467 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [129 ms]
+2017-10-04 11:26:48,473 INFO  [default] Writing WIF frame #28
+2017-10-04 11:26:48,498 INFO  [default] Producing frame 29 (@0.966667s)
+2017-10-04 11:26:48,631 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [131 ms]
+2017-10-04 11:26:48,636 INFO  [default] Writing WIF frame #29
+2017-10-04 11:26:48,661 INFO  [performance] Executed [int __cdecl main(int,char **)] in [5.34 seconds]
