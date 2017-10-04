@@ -2,7 +2,7 @@
 def scene_at(now)
 {
   // Create animation: x goes from -10 to +10 in 5 seconds
-  var x = Animations.animate(0, 3.1415, seconds(5))
+  var x = Animations.animate(-10, 10, seconds(5))
 
   // Create camera at (x[now], 0, 5).
   // x[now] returns the value of x at the current time in the animation
