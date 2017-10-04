@@ -261,6 +261,12 @@
     <ClCompile Include="demos\basic-sample-RTv1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="raytracers\ray-tracer-v2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="demos\basic-sample-RTv2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imaging\bitmap.h">
@@ -768,6 +774,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="demos\basic-sample-RTv1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="raytracers\ray-tracer-v2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="demos\basic-sample-RTv2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -3,6 +3,8 @@
 #include "raytracers/ray-tracer.h"
 #include <memory>
 
+using namespace imaging;
+
 
 namespace raytracer
 {
@@ -14,6 +16,7 @@ namespace raytracer
             {
             public:
                 TraceResult trace(const Scene&, const math::Ray&) const override;
+				Color compute_ambient(const MaterialProperties&) const;
             };
         }
 
