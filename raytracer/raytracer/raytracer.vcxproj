@@ -348,6 +348,7 @@
   <ItemGroup>
     <ClCompile Include="demos\basic-sample.cpp" />
     <ClCompile Include="demos\demo.cpp" />
+    <ClCompile Include="demos\my-demo.cpp" />
     <ClCompile Include="math\angle.cpp" />
     <ClCompile Include="animation\animation.cpp" />
     <ClCompile Include="animation\duration.cpp" />
@@ -473,6 +474,7 @@
     <ClInclude Include="command-line-parser.h" />
     <ClInclude Include="demos\demo.h" />
     <ClInclude Include="demos\demos.h" />
+    <ClInclude Include="demos\my-demo.h" />
     <ClInclude Include="materials\composition-material.h" />
     <ClInclude Include="imaging\bitmap-function.h" />
     <ClInclude Include="cameras\camera.h" />
@@ -595,6 +597,9 @@
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="debugger-visualizations.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
