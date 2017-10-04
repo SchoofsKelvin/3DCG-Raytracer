@@ -1032,3 +1032,7 @@
 2017-10-04 11:26:48,631 INFO  [performance] Executed [class std::shared_ptr<class imaging::Bitmap> __cdecl `anonymous-namespace'::StandardRenderer::render(const struct raytracer::Scene &) const] in [131 ms]
 2017-10-04 11:26:48,636 INFO  [default] Writing WIF frame #29
 2017-10-04 11:26:48,661 INFO  [performance] Executed [int __cdecl main(int,char **)] in [5.34 seconds]
+2017-10-04 11:28:59,660 INFO  [default] Terminated successfully
+2017-10-04 11:28:59,791 INFO  [default] Received animation of duration 1s
+2017-10-04 11:28:59,793 INFO  [default] 30 frames per second, 0.0333333s per frame, 30 frames
+2017-10-04 11:28:59,795 INFO  [default] Producing frame 0 (@0s)
