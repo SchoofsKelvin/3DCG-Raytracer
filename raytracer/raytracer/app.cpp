@@ -86,7 +86,7 @@ void process_command_line_arguments(int argc, char** argv)
 {
     CommandLineParser parser;
 
-    parser.register_processor("-s", render_script);
+    parser.register_processor_with_argument("-s", render_script);
     parser.register_processor("--quiet", quiet);
     parser.register_processor("--version", show_version);
     parser.register_processor("--beep", emit_beep);

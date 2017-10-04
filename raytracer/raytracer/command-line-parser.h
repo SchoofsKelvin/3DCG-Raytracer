@@ -9,13 +9,13 @@
 class CommandLineParser
 {
 public:
-    void register_processor(const std::string& prefix, std::function<void()> processor);
-    void register_processor(const std::string& prefix, std::function<void(const std::string&)> processor);
+	void register_processor(const std::string& prefix, std::function<void()> processor);
+    void register_processor_with_argument(const std::string& prefix, std::function<void(const std::string&)> processor);
     
     void process(int argc, char** argv) const;
 
 private:
-    void register_processor(const std::string& prefix, std::function<void(std::list<std::string>&)>);
+    void register_processor_internal(const std::string& prefix, std::function<void(std::list<std::string>&)>);
     void process(std::list<std::string>&) const;
     bool is_prefix_in_use(const std::string& prefix) const;
 

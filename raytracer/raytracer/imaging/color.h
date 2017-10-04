@@ -28,13 +28,13 @@ namespace imaging
         /// <summary>
         /// Default constructor. Initialized the color to black.
         /// </summary>
-        constexpr Color() : Color(0, 0, 0) { }
+		//constexpr Color() : Color(0, 0, 0) { }
+		constexpr Color() : r(0), g(0), b(0) { }
 
         /// <summary>
         /// Constructor.
         /// </summary>
-        constexpr Color(double r, double g, double b)
-            : r(r), g(g), b(b) { }
+		constexpr Color(double r, double g, double b) : r(r), g(g), b(b) {}
 
         /// <summary>
         /// Ensures all color components (r, g, b) are within the [0, 1] interval.

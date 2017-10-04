@@ -11,10 +11,10 @@ void CommandLineParser::register_processor(const std::string& prefix, std::funct
         processor();
     };
 
-    register_processor(prefix, wrapper);
+    register_processor_internal(prefix, wrapper);
 }
 
-void CommandLineParser::register_processor(const std::string& prefix, std::function<void(const std::string&)> processor)
+void CommandLineParser::register_processor_with_argument(const std::string& prefix, std::function<void(const std::string&)> processor)
 {
     std::function<void(std::list<std::string>&)> wrapper = [prefix, processor](std::list<std::string>& arguments) -> void {
         if (arguments.empty())
@@ -28,10 +28,10 @@ void CommandLineParser::register_processor(const std::string& prefix, std::funct
         processor(head);
     };
 
-    register_processor(prefix, wrapper);
+    register_processor_internal(prefix, wrapper);
 }
 
-void CommandLineParser::register_processor(const std::string& prefix, std::function<void(std::list<std::string>&)> processor)
+void CommandLineParser::register_processor_internal(const std::string& prefix, std::function<void(std::list<std::string>&)> processor)
 {
     if (is_prefix_in_use(prefix))
     {
