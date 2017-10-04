@@ -348,6 +348,7 @@
   <ItemGroup>
     <ClCompile Include="demos\basic-sample-RTv1.cpp" />
     <ClCompile Include="demos\basic-sample-RTv2.cpp" />
+    <ClCompile Include="demos\basic-sample-RTv3.cpp" />
     <ClCompile Include="demos\basic-sample.cpp" />
     <ClCompile Include="demos\demo.cpp" />
     <ClCompile Include="demos\my-demo.cpp" />
@@ -405,6 +406,7 @@
     <ClCompile Include="raytracers\ray-tracer-v0.cpp" />
     <ClCompile Include="raytracers\ray-tracer-v1.cpp" />
     <ClCompile Include="raytracers\ray-tracer-v2.cpp" />
+    <ClCompile Include="raytracers\ray-tracer-v3.cpp" />
     <ClCompile Include="renderers\renderer.cpp" />
     <ClCompile Include="renderers\standard-renderer.cpp" />
     <ClCompile Include="lights\light-ray.cpp" />
@@ -476,6 +478,7 @@
     <ClInclude Include="chaiscript\utility\utility.hpp" />
     <ClInclude Include="demos\basic-sample-RTv1.h" />
     <ClInclude Include="demos\basic-sample-RTv2.h" />
+    <ClInclude Include="demos\basic-sample-RTv3.h" />
     <ClInclude Include="demos\basic-sample.h" />
     <ClInclude Include="command-line-parser.h" />
     <ClInclude Include="demos\demo.h" />
@@ -519,6 +522,7 @@
     <ClInclude Include="pipeline\wif-processor.h" />
     <ClInclude Include="raytracers\ray-tracer-v1.h" />
     <ClInclude Include="raytracers\ray-tracer-v2.h" />
+    <ClInclude Include="raytracers\ray-tracer-v3.h" />
     <ClInclude Include="raytracers\trace-result.h" />
     <ClInclude Include="easylogging++.h" />
     <ClInclude Include="imaging\bitmap.h" />
