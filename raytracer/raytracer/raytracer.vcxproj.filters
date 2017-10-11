@@ -279,6 +279,9 @@
     <ClCompile Include="math\functions\vertical-lines-pattern.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="materials\material-2d-transformer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imaging\bitmap.h">
@@ -804,6 +807,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="math\functions\vertical-lines-pattern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="materials\material-2d-transformer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
