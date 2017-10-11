@@ -100,6 +100,27 @@ namespace
 			return Box(Interval<double>::infinite(), interval(-0.01, 0.01), Interval<double>::infinite());
 		}
 
+		bool find_first_positive_hit(const math::Ray& ray, Hit* hit) const override
+		{
+			// Compute denominator
+			double denom = ray.direction.dot(m_normal);
+
+			// If denominator == 0, there is no intersection (ray runs parallel to plane)
+			if (denom != approx(0.0))
+			{
+				// Compute numerator
+				double numer = -((ray.origin - Point3D(0, 0, 0)).dot(m_normal));
+
+				// Compute t
+				double t = numer / denom;
+
+				// shared_ptr<T>::get() returns the T* inside the shared pointer
+				initialize_hit(hit, ray, t);
+				return true;
+			}
+			return false;
+		}
+
 	protected:
 		void initialize_hit(Hit* hit, const Ray& ray, double t) const override
 		{
