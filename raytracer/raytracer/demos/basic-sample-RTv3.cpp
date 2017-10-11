@@ -29,26 +29,29 @@ namespace
             using namespace raytracer::primitives;
             using namespace raytracer::materials;
 
-            // Define material properties
-            MaterialProperties material_properties(
-                colors::white() * 0.3,      // ambient lighting, not supported yet
-                colors::black(),      // diffuse lighting, not supported yet
-                colors::white() * 0.8,      // specular highlights, not supported yet
-                10                     // specular exponent, not supported yet
-            );
+			auto material1 = uniform(MaterialProperties(
+				colors::red() * 0.8,      // ambient lighting, not supported yet
+				colors::black(),      // diffuse lighting, not supported yet
+				colors::white() * 0.2,      // specular highlights, not supported yet
+				10                     // specular exponent, not supported yet
+			));
+			auto material2 = uniform(MaterialProperties(
+				colors::green() * 0.6,      // ambient lighting, not supported yet
+				colors::black(),      // diffuse lighting, not supported yet
+				colors::white() * 0.8,      // specular highlights, not supported yet
+				10                     // specular exponent, not supported yet
+			));
 
-            // Create a uniform material: all parts of the primitive will be made out of the same material
-            auto material = uniform(material_properties);
+			auto material = vertical_lines(0.5, material1, material2);
 
             // Create an animation of a double going from -5.0 to 5.0 in 1 second
             // It is important to write 5.0 and not 5, otherwise it will create an animation of ints instead of doubles
             auto x_position = animation::animate(-5.0, 5.0, 1_s);
 
-            // Create a sphere. It has radius 1 and is centered at (0, 0, 0)
-            Primitive primitive = sphere();
+			Primitive primitive = xz_plane();
 
             // Move the sphere. x_position(now) = asks the animation what x at this point in time
-            primitive = translate(Vector3D(x_position(now), 0, 0), primitive);
+            //primitive = translate(Vector3D(x_position(now), 0, 0), primitive);
 
             // Assign a material to the sphere
             primitive = decorate(material, primitive);
@@ -66,8 +69,8 @@ namespace
 
             std::vector<LightSource> light_sources;
 
-			light_sources.push_back(raytracer::lights::omnidirectional(Point3D(0, 0, 10), colors::green()));
-			light_sources.push_back(raytracer::lights::omnidirectional(Point3D(10, 0, 0), colors::red()));
+			light_sources.push_back(raytracer::lights::omnidirectional(Point3D(0, 0, 10), colors::white()));
+			light_sources.push_back(raytracer::lights::omnidirectional(Point3D(10, 0, 0), colors::white()));
 
             // No lights
 
@@ -80,7 +83,7 @@ namespace
         raytracer::Camera create_camera(TimeStamp) override
         {
             return raytracer::cameras::perspective(
-                Point3D(0, 0, 10),         // position of eye
+                Point3D(0, 5, 10),         // position of eye
                 Point3D(0, 0, 0),          // point the camera looks at
                 Vector3D(0, 1, 0),         // up-vector: indicates camera is "standing up"
                 1,                         // distance between eye and viewing plane
@@ -99,5 +102,5 @@ namespace
 
 void demos::basic_sample_RTv3(std::shared_ptr<pipeline::Consumer<std::shared_ptr<Bitmap>>> output)
 {
-    MeshDemo(500, 1_s, 30, 1).render(output);
+    MeshDemo(500, 1_s, 5, 1).render(output);
 }
