@@ -51,6 +51,10 @@ namespace
 		{
 			return raytracer::materials::vertical_lines(thickness, m1, m2);
 		}
+
+		Material scale(const double x, const double y, const Material material) const {
+			return raytracer::materials::scale(Vector2D(x,y), material);
+		}
     };
 }
 
@@ -77,6 +81,7 @@ ModulePtr raytracer::scripting::_private_::create_materials_module()
     BIND_AS(uniform_by_map, uniform);
     BIND(horizontal_lines);
 	BIND(vertical_lines);
+	BIND(scale);
 #   undef BIND
 #   undef BIND_AS
 

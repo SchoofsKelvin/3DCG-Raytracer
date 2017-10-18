@@ -29,5 +29,6 @@ namespace raytracer
 
 	namespace materials
 	{
+		Material scale(const math::Vector2D, const Material);
 	}
 }
