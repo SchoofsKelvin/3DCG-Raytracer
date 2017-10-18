@@ -11,7 +11,8 @@ Function<bool(const Point2D&)> math::functions::vertical_lines(double thickness)
 	{
 		auto x = p.x();
 
-		return std::abs(x - round(x)) < thickness / 2;
+		// return std::abs(x - round(x)) < thickness / 2;
+		return fmod(x, thickness) < thickness / 2.0;
 	};
 
 	return from_lambda<bool, const Point2D&>(function);
