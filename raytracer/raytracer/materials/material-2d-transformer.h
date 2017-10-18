@@ -31,5 +31,6 @@ namespace raytracer
 	{
 		Material scale(const math::Vector2D, const Material);
 		Material translate(const math::Vector2D, const Material);
+		Material rotate(const math::Angle, const Material);
 	}
 }

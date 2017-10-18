@@ -59,6 +59,10 @@ namespace
 		Material translate(const Vector2D vec, const Material material) const {
 			return raytracer::materials::translate(vec, material);
 		}
+
+		Material rotate(const Angle angle, const Material material) const {
+			return raytracer::materials::rotate(angle, material);
+		}
     };
 }
 
@@ -87,6 +91,7 @@ ModulePtr raytracer::scripting::_private_::create_materials_module()
 	BIND(vertical_lines);
 	BIND(scale);
 	BIND(translate);
+	BIND(rotate);
 #   undef BIND
 #   undef BIND_AS
 

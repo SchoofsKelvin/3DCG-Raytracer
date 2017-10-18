@@ -27,3 +27,11 @@ Material raytracer::materials::translate(const Vector2D translate, const Materia
 	auto mi = std::make_shared<Material2DTransformer>(mat, trans);
 	return Material(mi);
 }
+
+
+Material raytracer::materials::rotate(const Angle angle, const Material mat)
+{
+	Transformation2D trans = Transformation2D(transformation_matrices::rotation(angle), transformation_matrices::rotation(-angle));
+	auto mi = std::make_shared<Material2DTransformer>(mat, trans);
+	return Material(mi);
+}
