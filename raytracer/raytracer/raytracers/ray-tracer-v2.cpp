@@ -76,7 +76,7 @@ Color raytracer::raytracers::_private_::RayTracerV2::compute_diffuse(const Mater
 	double cosinus = (lray.ray.origin - hit.position).normalized().dot(hit.normal);
 	if (cosinus < 0) return colors::black();
 
-	return cosinus * lray.color * props.ambient;
+	return cosinus * lray.color * props.diffuse;
 }
 
 
