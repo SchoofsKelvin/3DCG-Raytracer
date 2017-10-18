@@ -66,6 +66,7 @@ Material raytracer::make_3d_material(math::Function<MaterialProperties(const Poi
     return Material(std::make_shared<FunctionMaterial3D>(function));
 }
 
+
 math::Function<Material( animation::TimeStamp)> raytracer::to_animated_2d_material(Material material)
 {
     std::function<Material(animation::TimeStamp)> lambda = [material](animation::TimeStamp ts) {

@@ -14,7 +14,7 @@
 
 namespace raytracer
 {
-    class Material2DTransformer : materials::_private_::MaterialImplementation
+    class Material2DTransformer : public materials::_private_::MaterialImplementation
     {
     public:
         explicit Material2DTransformer(Material material, math::Transformation2D transformation)
@@ -26,4 +26,8 @@ namespace raytracer
         Material material;
 		math::Transformation2D transformation;
     };
+
+	namespace materials
+	{
+	}
 }
