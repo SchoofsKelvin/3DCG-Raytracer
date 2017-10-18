@@ -20,3 +20,10 @@ Material raytracer::materials::scale(const Vector2D scale, const Material mat)
 	auto mi = std::make_shared<Material2DTransformer>(mat, trans);
 	return Material(mi);
 }
+
+Material raytracer::materials::translate(const Vector2D translate, const Material mat)
+{
+	Transformation2D trans = Transformation2D(transformation_matrices::translation(translate), transformation_matrices::translation(-translate));
+	auto mi = std::make_shared<Material2DTransformer>(mat, trans);
+	return Material(mi);
+}

@@ -55,6 +55,10 @@ namespace
 		Material scale(const Vector2D vec, const Material material) const {
 			return raytracer::materials::scale(vec, material);
 		}
+
+		Material translate(const Vector2D vec, const Material material) const {
+			return raytracer::materials::translate(vec, material);
+		}
     };
 }
 
@@ -82,6 +86,7 @@ ModulePtr raytracer::scripting::_private_::create_materials_module()
     BIND(horizontal_lines);
 	BIND(vertical_lines);
 	BIND(scale);
+	BIND(translate);
 #   undef BIND
 #   undef BIND_AS
 
