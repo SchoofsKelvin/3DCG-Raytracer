@@ -10,7 +10,7 @@ def scene_at(now)
                                       "diffuse": Colors.green() ] )
 
   var y = Animations.animate(1, 5, seconds(5))[now]
-  var material = Materials.scale(0, y, Materials.horizontal_lines(0.5,m1,m2))
+  var material = Materials.scale(vec(0, y), Materials.horizontal_lines(0.5,m1,m2))
 
   // var root = decorate( material, crop_box( xz_plane(), interval(-1,1), interval(-1,1), interval(-1, 1) ) )
   var root = decorate( material, xz_plane() )

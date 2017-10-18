@@ -52,8 +52,8 @@ namespace
 			return raytracer::materials::vertical_lines(thickness, m1, m2);
 		}
 
-		Material scale(const double x, const double y, const Material material) const {
-			return raytracer::materials::scale(Vector2D(x,y), material);
+		Material scale(const Vector2D vec, const Material material) const {
+			return raytracer::materials::scale(vec, material);
 		}
     };
 }
