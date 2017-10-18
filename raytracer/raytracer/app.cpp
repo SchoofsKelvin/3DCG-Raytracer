@@ -4,7 +4,7 @@
 #include "version.h"
 #include "command-line-parser.h"
 #include "logging.h"
-#include "demos/demos.h"
+// #include "demos/demos.h"
 #include "pipeline/pipelines.h"
 #include "util/beep.h"
 #include "scripting/scripting.h"
