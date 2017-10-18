@@ -38,6 +38,16 @@ namespace
 			return hits;
 		}
 
+		bool find_first_positive_hit(const Ray& ray, Hit* hit) const override {
+			auto t = (x - ray.origin).dot(normal) / ray.direction.dot(normal);
+			auto h = ray.origin + ray.direction * t;
+			if ((y - x).cross(h - x).dot(normal) < 0) return false;
+			if ((z - y).cross(h - y).dot(normal) < 0) return false;
+			if ((x - z).cross(h - z).dot(normal) < 0) return false;
+			initialize_hit(hit, ray, t);
+			return true;
+		}
+
 		math::Box bounding_box() const override
 		{
 			double x_min = std::min({ x.x(), y.x(),z.x() });
