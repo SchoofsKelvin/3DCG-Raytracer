@@ -40,6 +40,7 @@ namespace
 
 		bool find_first_positive_hit(const Ray& ray, Hit* hit) const override {
 			auto t = (x - ray.origin).dot(normal) / ray.direction.dot(normal);
+			if (t < 0 || t >= hit->t) return false;
 			auto h = ray.origin + ray.direction * t;
 			if ((y - x).cross(h - x).dot(normal) < 0) return false;
 			if ((z - y).cross(h - y).dot(normal) < 0) return false;
