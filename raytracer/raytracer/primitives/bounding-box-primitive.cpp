@@ -18,9 +18,7 @@ namespace
 		Primitive primitive;
 		Box box;
 
-		BoundingBoxImplementation(const Primitive primitive) : primitive(primitive) {
-			box = primitive->bounding_box();
-		}
+		BoundingBoxImplementation(const Primitive primitive) : primitive(primitive), box(primitive->bounding_box()) {}
 
 		std::vector<std::shared_ptr<Hit>> find_all_hits(const Ray& ray) const override {
 			if (!box.is_hit_positively_by(ray)) {
@@ -32,13 +30,6 @@ namespace
 		bool find_first_positive_hit(const Ray& ray, Hit* hit) const override {
 			if (!box.is_hit_positively_by(ray)) return false;
 			return primitive->find_first_positive_hit(ray, hit);
-		}
-
-		std::vector<std::shared_ptr<Hit>> find_all_hits(const Ray& ray) const override {
-			if (!box.is_hit_by(ray)) {
-				return std::vector<std::shared_ptr<Hit>>();
-			}
-			return primitive->find_all_hits(ray);
 		}
 
 		math::Box bounding_box() const override
