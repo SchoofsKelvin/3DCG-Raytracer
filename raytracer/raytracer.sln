@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "raytracer", "raytracer\raytracer.vcxproj", "{91038B33-14FE-4EC4-A761-D26EBB65751D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MeshConverter", "meshconverter\MeshConverter.vcxproj", "{E1E0CE29-5257-4892-8D28-7DBFB0498538}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +35,27 @@ Global
 		{91038B33-14FE-4EC4-A761-D26EBB65751D}.Testing|x64.Build.0 = Testing|x64
 		{91038B33-14FE-4EC4-A761-D26EBB65751D}.Testing|x86.ActiveCfg = Testing|Win32
 		{91038B33-14FE-4EC4-A761-D26EBB65751D}.Testing|x86.Build.0 = Testing|Win32
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Debug|x64.ActiveCfg = Debug|x64
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Debug|x64.Build.0 = Debug|x64
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Debug|x86.Build.0 = Debug|Win32
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Release (Full Optimization)|x64.ActiveCfg = Release|x64
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Release (Full Optimization)|x64.Build.0 = Release|x64
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Release (Full Optimization)|x86.ActiveCfg = Release|Win32
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Release (Full Optimization)|x86.Build.0 = Release|Win32
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Release|x64.ActiveCfg = Release|x64
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Release|x64.Build.0 = Release|x64
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Release|x86.ActiveCfg = Release|Win32
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Release|x86.Build.0 = Release|Win32
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Testing|x64.ActiveCfg = Release|x64
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Testing|x64.Build.0 = Release|x64
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Testing|x86.ActiveCfg = Release|Win32
+		{E1E0CE29-5257-4892-8D28-7DBFB0498538}.Testing|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B174F52-B4E4-45EE-97F5-DDE02A28F1D5}
 	EndGlobalSection
 EndGlobal
