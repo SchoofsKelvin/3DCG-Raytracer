@@ -5,5 +5,6 @@
 #include "primitives/union-primitive.h"
 #include "primitives/decorator-primitive.h"
 #include "primitives/transformer-primitive.h"
+#include "primitives/cylinder-primitive.h"
 #include "primitives/triangle-primitive.h"
 #include "primitives/bounding-box-primitive.h"

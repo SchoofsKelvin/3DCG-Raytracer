@@ -1,0 +1,56 @@
+def scene_at(now)
+{
+                                      
+  var camera_x = Animations.animate(5, -5, seconds(5))[now]
+  var camera = Cameras.perspective( [ "eye": pos(camera_x,5,15),
+                                      "look_at": pos(0,0,0) ] )
+
+  var wall_material = Materials.uniform( [ "ambient": Colors.white() * 0.1,
+                                           "diffuse": Colors.white() * 0.8,
+                                           "specular": Colors.black(),
+                                           "specular_exponent": 0 ] )
+
+  var wall_material2 = Materials.uniform( [ "ambient": Colors.red() * 0.1,
+                                           "diffuse": Colors.white() * 0.8,
+                                           "specular": Colors.black(),
+                                           "specular_exponent": 0 ] )
+
+  var white = Materials.uniform( [ "ambient": Colors.white() * 0.3,
+                                   "diffuse": Colors.white() * 0.8,
+                                   "specular": Colors.white() * 0.5,
+                                   "specular_exponent": 10 ] )
+  var black = Materials.uniform( [ "ambient": Colors.white() * 0.1,
+                                   "diffuse": Colors.white() * 0.1,
+                                   "specular": Colors.white() * 0.5,
+                                   "specular_exponent": 10 ] )
+
+  //var cylinder_material = Materials.scale(0.2, 0.2, Materials.checkered2d(black, white))
+  var cylinder_material = Materials.vertical_lines(0.1,white,black)
+
+  var back_wall = decorate(wall_material, translate( vec(0,0,-6), xy_plane()))
+  var wall = decorate(wall_material2, translate( vec(-6,0,0), yz_plane()))
+  var floor = decorate(wall_material, translate( vec(0,-4,0), xz_plane()))
+  //var cylinder = decorate(cylinder_material, crop_along_x(cylinder_along_x(), interval(-1,1)))
+  var cylinder = decorate(cylinder_material, cylinder_along_x())
+
+  var root = union( [  cylinder, floor, wall, back_wall  ] )
+
+  var lights = [ Lights.omnidirectional( pos(5,5,5), Colors.white() * 0.5 ),
+                 Lights.omnidirectional( pos(-5,5,-5), Colors.white() * 0.5 )
+               ]
+
+  create_scene(camera, root, lights)
+}
+
+var renderer    = Renderers.standard( [ "width": 500,
+                                       "height": 500,
+                                       "sampler": Samplers.single(),
+                                       "ray_tracer": Raytracers.v3() ] )
+
+pipeline( scene_animation(scene_at, seconds(5)),
+          [ Pipeline.animation(10),
+            Pipeline.renderer(renderer),
+            Pipeline.wif(),
+            Pipeline.base64(),
+            Pipeline.stdout()
+          ] )
