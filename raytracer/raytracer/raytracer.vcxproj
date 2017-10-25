@@ -352,6 +352,7 @@
     <ClCompile Include="demos\basic-sample.cpp" />
     <ClCompile Include="demos\demo.cpp" />
     <ClCompile Include="demos\my-demo.cpp" />
+    <ClCompile Include="gg.cpp" />
     <ClCompile Include="materials\material-2d-transformer.cpp" />
     <ClCompile Include="math\angle.cpp" />
     <ClCompile Include="animation\animation.cpp" />
@@ -491,6 +492,7 @@
     <ClInclude Include="demos\demo.h" />
     <ClInclude Include="demos\demos.h" />
     <ClInclude Include="demos\my-demo.h" />
+    <ClInclude Include="gg.h" />
     <ClInclude Include="materials\composition-material.h" />
     <ClInclude Include="imaging\bitmap-function.h" />
     <ClInclude Include="cameras\camera.h" />
