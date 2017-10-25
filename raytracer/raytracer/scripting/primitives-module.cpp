@@ -1,10 +1,13 @@
 #ifndef EXCLUDE_SCRIPTING
 
+#include <vector>
+
 #include "scripting/primitives-module.h"
 #include "scripting/scripting-util.h"
 #include "primitives/primitives.h"
 #include "math/functions.h"
 #include "animation/time-stamp.h"
+#include "gg.h"
 
 using namespace chaiscript;
 using namespace raytracer;
@@ -23,6 +26,11 @@ namespace
 
         return primitives::make_union(children);
     }
+
+	Primitive load_gg(const std::string filename) {
+		std::vector<gg::triangle> triangles = gg::readfile(filename);
+		return primitives::make_mesh(triangles);
+	}
 }
 
 ModulePtr raytracer::scripting::_private_::create_primitives_module()
@@ -49,6 +57,7 @@ ModulePtr raytracer::scripting::_private_::create_primitives_module()
     BIND_HELPER_FUNCTION_AS(make_union, union);
     BIND_DIRECTLY(decorate);
     BIND_DIRECTLY(translate);
+	BIND_HELPER_FUNCTION_AS(load_gg, load_gg);
 #   undef BIND_HELPER_FUNCTION_AS
 #   undef BIND_DIRECTLY
 #   undef BIND_HELPER_FUNCTION

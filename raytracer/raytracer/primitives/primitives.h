@@ -8,3 +8,4 @@
 #include "primitives/cylinder-primitive.h"
 #include "primitives/triangle-primitive.h"
 #include "primitives/bounding-box-primitive.h"
+#include "primitives/mesh-primitive.h"
