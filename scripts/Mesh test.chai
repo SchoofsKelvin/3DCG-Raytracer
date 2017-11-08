@@ -1,9 +1,9 @@
 def scene_at(now)
 {
                                       
-  var camera_x = Animations.animate(25, -25, seconds(5))[now]
-  var camera = Cameras.perspective( [ "eye": pos(0,25,200),
-                                      "look_at": pos(camera_x,25,0) ] )
+  var camera_x = Animations.animate(0, 150, seconds(5))[now]
+  var camera = Cameras.perspective( [ "eye": pos(0,125,50),
+                                      "look_at": pos(150-camera_x,0,50) ] )
 
   var wall_material = Materials.uniform( [ "ambient": Colors.white() * 0.1,
                                            "diffuse": Colors.white() * 0.3,
