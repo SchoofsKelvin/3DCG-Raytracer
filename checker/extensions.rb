@@ -102,6 +102,8 @@ def check_difficulties
 
     (0...counts.size).to_a.reverse.each do |i|
       minimum = MINIMAL_REQUIREMENTS_BY_DIFFICULTY[i]
+	  
+	  puts "#{id} made #{counts[i]}/#{minimum} of difficulty #{i+1}"
 
       if counts[i] < minimum
         puts "Uh oh! #{id} has insufficient extension of difficulty #{i + 1}!"
