@@ -1,27 +1,32 @@
-team_member 'Nick' do
+team_member 'Kelvin' do
   extension BasicSample
   extension BasicScripting
   
   extension RayTracerV1
   extension RayTracerV2
   extension RayTracerV3
-
-  extension PrimitiveRotationX
-end
-
-team_member 'Kurt' do
-  extension BasicSample
-  extension BasicScripting
-  
   extension RayTracerV4
   extension RayTracerV5
-end
 
-team_member 'Dale' do
-  extension BasicSample
-  extension BasicScripting
-
-  extension RayTracerV6
+  extension RandomSampler
+  
+  extension MaterialVerticalLines
+  extension MaterialTransformer2D
+  extension MaterialScale2D
+  #extension MaterialTranslate2D
+  #extension MaterialRotate2D
+  
+  extension PlaneXZ
+  extension PlaneXZOptimized
+  #extension PlaneYZ
+  #extension PlaneYZOptimized
+  extension Triangle
+  extension TriangleOptimized
+  extension MeshReading
+  extension MeshRendering
+  extension BoundingBox
+  
+  extension ParallelScheduler
 end
 
 
