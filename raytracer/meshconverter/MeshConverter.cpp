@@ -31,6 +31,7 @@ int main() {
 		// Loop over faces(polygon)
 		std::cout << "Shape: " << s << std::endl;
 		size_t index_offset = 0;
+		auto idk = shapes[s].mesh.num_face_vertices[0];
 		for (size_t f = 0; f < shapes[s].mesh.num_face_vertices.size(); f++) {
 			int fv = shapes[s].mesh.num_face_vertices[f];
 
@@ -76,11 +77,17 @@ int main() {
 			triangle t = triangle{ vx1, vy1, vz1, vx2, vy2, vz2, vx3, vy3, vz3 };
 			triangles.push_back(t);
 
+			std::cout << "\t\t" << fv << "|" << index_offset << ": " << (idx1.vertex_index+1) << ", " << (idx2.vertex_index + 1) << ", " << (idx3.vertex_index + 1) << std::endl;
+			std::cout << "\t\t" << vx1 << ", " << vy1 << ", " << vz1 << std::endl;
+			std::cout << "\t\t" << vx2 << ", " << vy2 << ", " << vz2 << std::endl;
+			std::cout << "\t\t" << vx3 << ", " << vy3 << ", " << vz3 << std::endl;
+
 			index_offset += fv;
 
 			// per-face material
 			shapes[s].mesh.material_ids[f];
 		}
+		std::cout << "IDK: " << index_offset << " " << shapes[s].mesh.indices.size() << std::endl;
 	}
 	std::cout << shapes.size() << ", " << materials.size() << std::endl;
 	std::cout << "#Triangles: " << triangles.size() << std::endl;
@@ -88,6 +95,14 @@ int main() {
 	std::cout << "Written to file, reading in again" << std::endl;
 	auto gg = readfile(outputfile);
 	std::cout << "#Triangles: " << gg.size() << std::endl;
+	std::getchar();
+	for each (triangle t in gg)
+	{
+		std::cout << t.x1 << ", " << t.y1 << ", " << t.z1 << std::endl;
+		std::cout << t.x2 << ", " << t.y2 << ", " << t.z2 << std::endl;
+		std::cout << t.x3 << ", " << t.y3 << ", " << t.z3 << std::endl;
+		std::cout << std::endl << std::endl;
+	}
 	std::cout << "Program finished" << std::endl;
 	std::getchar();
 	return 0;

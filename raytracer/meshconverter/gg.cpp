@@ -4,7 +4,7 @@ using namespace gg;
 
 void gg::writefile(const std::vector<triangle> *triangles, std::string filename) {
 	std::ofstream file(filename, std::ios::binary);
-	auto amount = triangles->size();
+	int amount = triangles->size();
 	file.write((char*)&amount, sizeof(amount));
 	for each (triangle t in *triangles)
 	{
@@ -14,10 +14,10 @@ void gg::writefile(const std::vector<triangle> *triangles, std::string filename)
 }
 
 std::vector<triangle> gg::readfile(std::string filename) {
-	std::vector<triangle> triangles;
 	std::ifstream file(filename, std::ios::binary);
 	int amount;
 	file.read((char*)&amount, sizeof(amount));
+	std::vector<triangle> triangles(amount);
 	for (int i = 0; i < amount; i++)
 	{
 		triangle t;
