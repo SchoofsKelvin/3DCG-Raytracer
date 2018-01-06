@@ -9,10 +9,11 @@ Function<bool(const Point2D&)> math::functions::vertical_lines(double thickness)
 {
 	std::function<bool(const Point2D&)> function = [thickness](const Point2D& p)
 	{
-		auto x = p.x();
+		auto x = abs(p.x());
 
 		// return std::abs(x - round(x)) < thickness / 2;
-		return fmod(x, thickness) < thickness / 2.0;
+		auto val = fmod(x, thickness) < thickness / 2.0;
+		return p.x() < 0 ? val : !val;
 	};
 
 	return from_lambda<bool, const Point2D&>(function);

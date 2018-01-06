@@ -9,10 +9,11 @@ Function<bool(const Point2D&)> math::functions::horizontal_lines(double thicknes
 {
 	std::function<bool(const Point2D&)> function = [thickness](const Point2D& p)
 	{
-		auto y = std::abs(p.y()) + thickness/4;
+		auto y = abs(p.y());
 
-		// return std::abs(y - round(y)) < thickness / 2;
-		return fmod(y, thickness) < thickness / 2.0;
+		// return std::abs(x - round(x)) < thickness / 2;
+		auto val = fmod(y, thickness) < thickness / 2.0;
+		return p.y() < 0 ? val : !val;
 	};
 
 	return from_lambda<bool, const Point2D&>(function);
