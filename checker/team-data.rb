@@ -1,32 +1,32 @@
 team_member 'Kelvin' do
-  extension BasicSample
-  extension BasicScripting
+  extension BasicSample				# Any script
+  extension BasicScripting			# Any script
   
-  extension RayTracerV1
-  extension RayTracerV2
-  extension RayTracerV3
-  extension RayTracerV4
-  extension RayTracerV5
+  extension RayTracerV1				# RayTracerV5 test
+  extension RayTracerV2				# RayTracerV5 test
+  extension RayTracerV3				# RayTracerV5 test
+  extension RayTracerV4				# RayTracerV5 test
+  extension RayTracerV5				# RayTracerV5 test
 
-  extension RandomSampler
+  extension RandomSampler			# RayTracerV5 test (sub screenshots)
   
-  extension MaterialVerticalLines
-  extension MaterialTransformer2D
-  extension MaterialScale2D
+  extension MaterialVerticalLines	# Material Lines
+  extension MaterialTransformer2D	# MaterialScale2D
+  extension MaterialScale2D			# MaterialScale2D
   #extension MaterialTranslate2D
   #extension MaterialRotate2D
   
-  extension PlaneXZ
-  extension PlaneXZOptimized
+  extension PlaneXZ					# MaterialScale2D
+  extension PlaneXZOptimized		# MaterialScale2D
   #extension PlaneYZ
   #extension PlaneYZOptimized
-  extension Triangle
-  extension TriangleOptimized
-  extension MeshReading
-  extension MeshRendering
-  extension BoundingBox
+  extension Triangle				# Triangle test
+  extension TriangleOptimized		# Triangle test
+  extension MeshReading				# Mesh test
+  extension MeshRendering			# Mesh test
+  extension BoundingBox				# Mesh test
   
-  extension ParallelScheduler
+  extension ParallelScheduler		# Any script
 end
 
 
