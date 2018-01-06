@@ -1,0 +1,31 @@
+def material(color) {
+  Materials.uniform( [ "ambient": color * 0.1,
+                       "diffuse": color ] )
+}
+
+var camera = Cameras.perspective( [ "eye": pos(0,3,3),
+                                    "look_at": pos(0,0,0) ] )
+
+var white = material(Colors.white())
+var black = material(Colors.white() * 0.2)
+var vertical = Materials.vertical_lines(0.1, black, white)
+var horizontal = Materials.horizontal_lines(0.1, black, white)
+
+var root = union( [ decorate( vertical, sphere() ),
+                    decorate( horizontal, translate( vec(0, -1, 0), xz_plane() ) ) ] )
+
+var lights = [ Lights.omnidirectional( pos(0,0,5), Colors.white() ) ]
+
+var scene = create_scene(camera, root, lights)
+
+var renderer    = Renderers.standard( [ "width": 500,
+                                       "height": 500,
+                                       "sampler": Samplers.random(25),
+                                       "ray_tracer": Raytracers.v5() ] )
+
+pipeline( scene,
+          [ Pipeline.renderer(renderer),
+            Pipeline.wif(),
+            Pipeline.base64(),
+            Pipeline.stdout()
+          ] )

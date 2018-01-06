@@ -1,0 +1,33 @@
+def material(color) {
+  Materials.uniform( [ "ambient": color * 0.1,
+                       "diffuse": color ] )
+}
+
+def scene_at(now)
+{
+  var camera = Cameras.perspective( [ "eye": pos(0,1,2),
+                                      "look_at": pos(0,0,0) ] )
+
+  var x = Animations.animate(0, 5, seconds(5))[now]
+  var white = material(Colors.white())
+  var black = material(Colors.white() * 0.2)
+  var material = Materials.translate(vec(x, 0), Materials.vertical_lines(0.5, black, white))
+
+  var root = decorate( material, xz_plane() )
+
+  var lights = [ Lights.omnidirectional( pos(0,5,0), Colors.white() ) ]
+
+  create_scene(camera, root, lights)
+}
+
+var renderer = Renderers.standard( [ "width": 500,
+                                     "height": 500,
+                                     "sampler": Samplers.single(),
+                                     "ray_tracer": Raytracers.v5() ] )
+
+pipeline( scene_animation(scene_at, seconds(3)),
+          [ Pipeline.animation(30),
+            Pipeline.renderer(renderer),
+            Pipeline.wif(),
+            Pipeline.base64(),
+            Pipeline.stdout() ] )
