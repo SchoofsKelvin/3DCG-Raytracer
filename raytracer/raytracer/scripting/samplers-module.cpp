@@ -17,6 +17,10 @@ namespace
         {
             return samplers::single();
         }
+		Sampler random(int sampleCount) const
+		{
+			return samplers::random(sampleCount);
+		}
     };
 }
 
@@ -31,6 +35,7 @@ ModulePtr raytracer::scripting::_private_::create_samplers_module()
 
 #   define BIND(NAME)  module->add(fun(&SamplerLibrary::NAME), #NAME)
     BIND(single);
+	BIND(random);
 #   undef BIND
 
     return module;
